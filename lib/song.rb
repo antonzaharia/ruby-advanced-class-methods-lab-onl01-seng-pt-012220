@@ -10,9 +10,10 @@ class Song
     self.class.all << self
   end
   
-def self.create(name)
-    person = self.new
-    person.name = name
+def self.create(name, artist_name)
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
     @@all << person
   end
 
